@@ -1,0 +1,13 @@
+function ordenarPorIdade(pessoas) {
+    return pessoas.sort(function(a, b) {
+        return a.idade - b.idade;
+    });
+}
+const pessoas = [
+    { nome: 'Carlos', idade: 18 },
+    { nome: 'Caio', idade: 20 },
+    { nome: 'Thierry', idade: 19 },
+    { nome: 'Davy', idade: 20 }
+];
+const resultado = ordenarPorIdade(pessoas);
+console.log(resultado);

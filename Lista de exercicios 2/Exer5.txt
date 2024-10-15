@@ -1,0 +1,16 @@
+function somaMatriz(matriz) {
+    let soma = 0;
+
+    for (let linha of matriz) {
+        for (let numero of linha) {
+            soma += numero;
+        }
+    }
+    return soma; 
+}
+const matriz = [
+    [0, 15, 31],
+    [53, 79, 97],
+    [0, 1, 7]
+];
+console.log(somaMatriz(matriz));

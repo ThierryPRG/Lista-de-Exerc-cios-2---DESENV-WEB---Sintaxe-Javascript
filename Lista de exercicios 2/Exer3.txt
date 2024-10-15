@@ -1,0 +1,13 @@
+function separarParesImpares(array) {
+    return array.reduce((acc, num) => {
+        if (num % 2 === 0) {
+            acc.pares.push(num);
+        } else {
+            acc.impares.push(num);
+        }
+        return acc;
+    }, { pares: [], impares: [] });
+}
+const numeros = [11, 28, 47, 38, 56, 74, 9, 7, 65, 92];
+const resultado = separarParesImpares(numeros);
+console.log(resultado);

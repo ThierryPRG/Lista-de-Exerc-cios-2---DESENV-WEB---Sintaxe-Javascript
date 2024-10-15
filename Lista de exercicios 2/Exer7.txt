@@ -1,0 +1,12 @@
+function multiplicarMatrizes(matrizA, matrizB) {
+    const matrizResultado = Array.from({ length: matrizA.length }, () => Array(matrizB[0].length).fill(0));
+    for (let i = 0; i < matrizA.length; i++)
+        for (let j = 0; j < matrizB[0].length; j++)
+            for (let x = 0; x < matrizA[0].length; x++)
+                matrizResultado[i][j] += matrizA[i][x] * matrizB[x][j];
+
+    return matrizResultado;
+}
+const matrizA = [[15, 17], [13, 19]];
+const matrizB = [[3, 1], [9, 7]];
+console.log(multiplicarMatrizes(matrizA, matrizB)); 

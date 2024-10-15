@@ -1,0 +1,10 @@
+function substituirElemento(array, valorAntigo, novoValor) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === valorAntigo) {
+            array[i] = novoValor;
+        }
+    }
+}
+const numeros = [3, 1, 2, 3, 3, 4, 1, 5, 3];
+substituirElemento(numeros, 3, 99);
+console.log(numeros); 
